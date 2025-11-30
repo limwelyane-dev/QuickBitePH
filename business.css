@@ -106,9 +106,13 @@ body{
 .qty-controls button{padding:4px 7px;border-radius:6px;border:0;background:#eee;cursor:pointer;font-weight:700}
 .remove-link{background:transparent;color:#c33;border:0;cursor:pointer}
 
-.cart-summary{padding-top:8px;padding-bottom: 20px;}
+.cart-summary{padding-top:8px;padding-bottom: 10px;}
 .summary-row{display:flex;justify-content:space-between;margin:8px 0;font-size:15px}
 .note{font-size:12px;color:var(--muted);margin-top:10px}
+
+.mssger {
+  padding-bottom: 20px;
+}
 
 .site-footer{
   max-width:1100px;
