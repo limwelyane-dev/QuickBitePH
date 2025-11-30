@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QuickBite Foodhub</title>
+  <link rel="stylesheet" href="business.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <h1>QuickBite Foodhub</h1>
+      <p class="tag">Messenger checkout</p>
+      <p class="tag">Poblacion, Gitagum, Mis. Or.</p>
+    </div>
+    <div class="header-actions">
+      <button id="cartToggle" class="btn cart-btn">🛒 Cart (<span id="cartCount">0</span>)</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Add Your Cravings!</h2>
+      <p>Add foods/Drinks and click Checkout to message your order via Messenger.</p>
+    </section>
+
+    <!-- Foods Section -->
+    <section class="products-grid" id="foods" aria-label="Food products">
+      <h2 class="section-title">🍽️ Foods</h2>
+      <!-- JS will inject food products here -->
+    </section>
+
+    <!-- Drinks Section -->
+    <section class="products-grid" id="drinks" aria-label="Drink products">
+      <h2 class="section-title">🥤 Drinks</h2>
+      <!-- JS will inject drink products here -->
+    </section>
+  </main>
+
+  <!-- Cart Sidebar -->
+  <aside id="cartSidebar" class="cart-sidebar" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="closeCart" class="btn small">✕</button>
+    </div>
+
+    <div id="cartItems" class="cart-items">
+      <!-- cart items -->
+    </div>
+
+    <div class="cart-summary">
+      <div class="summary-row">
+        <span>Items</span><span id="itemsCount">0</span>
+      </div>
+      <div class="summary-row">
+        <strong>Total</strong><strong id="cartTotal">₱0</strong>
+      </div>
+
+      <div class="checkout-controls">
+        <button id="checkoutMessenger" class="btn wide primary">Checkout via Messenger</button>
+        <button id="checkoutWhatsApp" class="btn wide">Send via WhatsApp</button>
+      </div>
+
+      <p class="note">The order message will be copied to clipboard. Open Messenger and paste the message to send.</p>
+
+      <label class="contact-label">
+        Your name (optional)
+        <input id="buyerName" type="text" placeholder="Example: Jun Mar" />
+      </label>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <strong>Deliciousness delivered daily.</strong>
+    <strong>Thank You for Trusting!!</strong>
+    <p>📍You can visit us at Poblacin, Gitagum, Mis. Or.(Gitagum plaza)</p>
+  </footer>
+
+  <script src="business.js"></script>
+</body>
+</html>
