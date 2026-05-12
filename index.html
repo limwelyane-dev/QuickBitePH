@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="firstPage" id="firstPage">
+        <div class="backGround">
+            <div class="content">
+                <h2>QuickBite <span>FOODHUB</span></h2>
+                <h1><span>ADD </span>Your Cravings Here!</h1>
+                <div class="fText">
+                    <p>Welcome to our food website, where every dish is made fresh with quality ingredients and crafted <br> to satisfy your cravings. Enjoy delicious meals that are simple, affordable, and full of flavor.</p>
+                </div>
+                <div class="icons">
+                    <a href="https://www.facebook.com"><img src="webFile/icon-fb.png" alt="facebook icon"></a>
+                    <a href="https://www.instagram.com"><img src="webFile/icon-ig.png" alt="instagram icon"></a>
+                    <a href="https://www.twitter.com"><img src="webFile/icon-tw.png" alt="twitter icon"></a>
+                    <div class="register">
+                        <div class="logInBtn">
+                            <button id="logInBtn">LogIn</button>
+                            <button class="registerbtn" id="registerBtn">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="authPage" id="login" style="display: none;">
+        <button id="closeLogin" class="close-modal">✕</button>
+        <form id="loginForm" class="authBox">
+                <h2>Login</h2>
+                <div class="input-box">
+                    <input type="email" id="loginEmail" placeholder="Email" required>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                </div>
+
+                <button type="submit" id="verifyLogin">Login</button>
+
+                <div class="forgotpass">
+                    <label for=""><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+
+
+                <div class="register-link">
+                    <p>Don't have an account? <a href="#" onclick="showSignup()">Register</a></p>
+                </div>
+        </form>
+                  
+        <form id="signupForm" class="authBox" style="display: none;">
+            <h2>Register</h2>
+
+            <input type="email" id="signupEmail" placeholder="Email" required>
+            <input type="password" id="signupPassword" placeholder="Password" required>
+
+            <button type="submit">Register</button>
+
+            <p>Already have an account? 
+                <a href="#" onclick="showLogin()">Login</a>
+            </p>
+        </form>
+
+    </div>
+
+    <main>
+        <div class="secondPage hidden" id="secondPage" >
+            <div class="left">
+                <div class="qlogo">
+                    <h2>QuickBite <span>FOODHUB</span></h2>
+                </div>
+
+                <div class="ratings">
+                    <hr>
+                    <div class="qtext">
+                        <p>Craving something? Get it fast. QuickBite FoodHub delivers flavor without the wait.</p>
+                    </div>
+                
+                </div>
+                
+                <div class="imgAni">
+                    <div class="scrollproduct">
+                        <div class="productImg">
+                            <img src="webFile/ground-pork.jpg" alt="Ground Pork">
+                            <h3 id="name">Ground Pork</h3>
+                            <p id="rate">Ratings: ⭐⭐⭐⭐</p>
+                            <p id="benefits" style="display: none;">Ground pork is high in protein and fats, and also provides iron, zinc, and B vitamins (especially B12) from pork, with no carbohydrates unless mixed with fillers or used in recipes with sauces.</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="webFile/Pork-Steak.jpg" alt="Pork Steak">
+                            <h3 id="name">Pork Steak</h3>
+                            <p id="rate">Ratings: ⭐⭐⭐⭐⭐</p>
+                            <p id="benefits" style="display: none;">Pork steak is high in protein and fats, and also provides iron, zinc, and B vitamins from pork, with minimal carbohydrates unless cooked with sauces or marinades.</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="webFile/barbecue.jpg" alt="Pork bbq">
+                            <h3>Pork bbq</h3>
+                            <p id="rate">Ratings: ⭐⭐⭐⭐⭐</p>
+                            <p id="benefits" style="display: none;">Pork BBQ is high in protein, fats, and carbohydrates (from the sugary marinade), and also provides iron and B vitamins from pork, along with sodium and added sugars from the seasoning and sauce.</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="webFile/roasted-chicken.webp" alt="">
+                            <h3>Roasted Chicken</h3>
+                            <p id="rate">Ratings: ⭐⭐⭐⭐</p>
+                            <p id="benefits" style="display: none;">Roasted chicken is high in protein and fats (especially if skin is included), and also provides iron, zinc, and B vitamins from the chicken, with very little to no carbohydrates unless served with sides or sauces.</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="webFile/smoothered-chicken-3.jpg" alt="">
+                            <h3>Smoothered Chicken</h3>
+                            <p id="rate">Ratings: ⭐⭐⭐⭐</p>
+                            <p id="benefits" style="display: none;">Smothered chicken is high in protein, fats, and carbohydrates (from gravy or sauce), and also provides iron and B vitamins from the chicken, along with sodium and extra calories from the creamy or seasoned sauce.</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="webFile/beef-meatballs.jpg" alt="">
+                            <h3>Beef MeatBalls</h3>
+                            <p id="rate">Ratings: ⭐⭐⭐</p>
+                            <p id="benefits" style="display: none;">Beef meatballs are high in protein and fats, and also provide iron, zinc, and B vitamins from beef, with carbohydrates coming from breadcrumbs or fillers and sauces used in preparation.</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="webFile/beef-nilaga.jpg" alt="">
+                            <h3>Beef Nilaga</h3>
+                            <p id="rate">Ratings: ⭐⭐⭐⭐</p>
+                            <p id="benefits" style="display: none;">Beef nilaga is high in protein, and also provides iron and B vitamins from beef, potassium and fiber from vegetables, and carbohydrates from ingredients like potatoes, corn, or cabbage.</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="webFile/beef-steak.jpg" alt="">
+                            <h3>Beef Steak</h3>
+                            <p id="rate">Ratings: ⭐⭐⭐⭐⭐</p>
+                            <p id="benefits" style="display: none;">Beef steak is high in protein and fats, and also provides iron, zinc, and B vitamins (especially B12 and B6) from the beef, with no carbohydrates unless added in sauces or sides.</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="webFile/bucket.jpg" alt="">
+                            <h3>Chicken Bucket</h3>
+                            <p id="rate">Ratings: ⭐⭐⭐⭐</p>
+                            <p id="benefits" style="display: none;">Fried chicken is high in protein, fats, and carbohydrates (from the breading), and also provides iron and B vitamins from the chicken, along with sodium from seasoning and frying process.</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="webFile/beef-tacos.webp" alt="">
+                            <h3>Beef Tacos</h3>
+                            <p id="rate">Ratings: ⭐⭐⭐⭐⭐</p>
+                            <p id="benefits" style="display: none;">Beef tacos are high in protein, fats, and carbohydrates, and also provide iron and zinc from beef along with fiber from the tortilla and vegetables.</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="webFile/Pork-Adobo_2.webp" alt="">
+                            <h3>Pork Adobo</h3>
+                            <p id="rate">Ratings: ⭐⭐⭐⭐⭐</p>
+                            <p id="benefits" style="display: none;">Pork adobo is high in protein, fats, and sodium, and also provides iron and zinc from pork along with small amounts of carbohydrates from the sauce and seasonings.</p>
+                        </div>
+                    </div>
+
+                    <div aria-hidden="true" class="scrollproduct">
+                        <div class="productImg">
+                            <img src="webFile/ground-pork.jpg" alt="">
+                            <h3 id="name">Ground Pork</h3>
+                            <p id="rate">Ratings: ⭐⭐⭐⭐</p>
+                            <p id="benefits" style="display: none;">Ground pork is high in protein and fats, and also provides iron, zinc, and B vitamins (especially B12) from pork, with no carbohydrates unless mixed with fillers or used in recipes with sauces.</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="webFile/Pork-Steak.jpg" alt="">
+                            <h3 id="name">Pork Steak</h3>
+                            <p id="rate">Ratings: ⭐⭐⭐⭐⭐</p>
+                            <p id="benefits" style="display: none;">Pork steak is high in protein and fats, and also provides iron, zinc, and B vitamins from pork, with minimal carbohydrates unless cooked with sauces or marinades.</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="webFile/barbecue.jpg" alt="">
+                            <h3>Pork bbq</h3>
+                            <p id="rate">Ratings: ⭐⭐⭐⭐⭐</p>
+                            <p id="benefits" style="display: none;">Pork BBQ is high in protein, fats, and carbohydrates (from the sugary marinade), and also provides iron and B vitamins from pork, along with sodium and added sugars from the seasoning and sauce.</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="webFile/roasted-chicken.webp" alt="">
+                            <h3>Roasted Chicken</h3>
+                            <p id="rate">Ratings: ⭐⭐⭐⭐</p>
+                            <p id="benefits" style="display: none;">Roasted chicken is high in protein and fats (especially if skin is included), and also provides iron, zinc, and B vitamins from the chicken, with very little to no carbohydrates unless served with sides or sauces.</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="webFile/smoothered-chicken-3.jpg" alt="">
+                            <h3>Smoothered Chicken</h3>
+                            <p id="rate">Ratings: ⭐⭐⭐⭐</p>
+                            <p id="benefits" style="display: none;">Smothered chicken is high in protein, fats, and carbohydrates (from gravy or sauce), and also provides iron and B vitamins from the chicken, along with sodium and extra calories from the creamy or seasoned sauce.</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="webFile/beef-meatballs.jpg" alt="">
+                            <h3>Beef MeatBalls</h3>
+                            <p id="rate">Ratings: ⭐⭐⭐</p>
+                            <p id="benefits" style="display: none;">Beef meatballs are high in protein and fats, and also provide iron, zinc, and B vitamins from beef, with carbohydrates coming from breadcrumbs or fillers and sauces used in preparation.</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="webFile/beef-nilaga.jpg" alt="">
+                            <h3>Beef Nilaga</h3>
+                            <p id="rate">Ratings: ⭐⭐⭐⭐</p>
+                            <p id="benefits" style="display: none;">Beef nilaga is high in protein, and also provides iron and B vitamins from beef, potassium and fiber from vegetables, and carbohydrates from ingredients like potatoes, corn, or cabbage.</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="webFile/beef-steak.jpg" alt="">
+                            <h3>Beef Steak</h3>
+                            <p id="rate">Ratings: ⭐⭐⭐⭐⭐</p>
+                            <p id="benefits" style="display: none;">Beef steak is high in protein and fats, and also provides iron, zinc, and B vitamins (especially B12 and B6) from the beef, with no carbohydrates unless added in sauces or sides.</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="webFile/bucket.jpg" alt="">
+                            <h3>Chicken Bucket</h3>
+                            <p id="rate">Ratings: ⭐⭐⭐⭐</p>
+                            <p id="benefits" style="display: none;">Fried chicken is high in protein, fats, and carbohydrates (from the breading), and also provides iron and B vitamins from the chicken, along with sodium from seasoning and frying process.</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="webFile/beef-tacos.webp" alt="">
+                            <h3>Beef Tacos</h3>
+                            <p id="rate">Ratings: ⭐⭐⭐⭐⭐</p>
+                            <p id="benefits" style="display: none;">Beef tacos are high in protein, fats, and carbohydrates, and also provide iron and zinc from beef along with fiber from the tortilla and vegetables.</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="webFile/Pork-Adobo_2.webp" alt="">
+                            <h3>Pork Adobo</h3>
+                            <p id="rate">Ratings: ⭐⭐⭐⭐⭐</p>
+                            <p id="benefits" style="display: none;">Pork adobo is high in protein, fats, and sodium, and also provides iron and zinc from pork along with small amounts of carbohydrates from the sauce and seasonings.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="orderbtn">
+                    <button id="OrderNow">Order Now</button>
+                    <button id="seemore">About Us</button>
+                </div>
+
+                <div class="contactInfo">
+                    <li><a href="#">limwelyane@gmail.com</a></li>
+                    <li><a href="#">(+63) 939 886 6823</a></li>
+                    <li><a href="#">Cagayan de Oro City (Philippines)</a></li>
+                </div>
+            </div>
+
+            <div class="rigth">
+                <div class="sideImg">
+                    <div class="info">
+                        <h3 id="viewText"> Beef MeatBalls</h3>
+                        <p id="rating">Ratings: ⭐⭐⭐</p>
+                        <p id="benefitsInfo">Beef meatballs are high in protein and fats, and also provide iron, zinc, and B vitamins from beef, with carbohydrates coming from breadcrumbs or fillers and sauces used in preparation.</p>
+                    </div>
+                    <img id="viewImg" src="webFile/beef-meatballs.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="myProducts hidden">
+            <div class="headerLinks">
+                <div class="links">
+                    <ul>
+                        <li><a href="#" id="home">Home</a></li>
+                        <li><a href="#" id="about">About us</a></li>
+                        <li><a href="#">Favourates</a></li>
+                        <li>
+                            <select class="selectcategory">
+                                <option value="category">Category</option>
+                                <option value="chicken">Chicken</option>
+                                <option value="pork">Pork</option>
+                                <option value="seafood">Seafoods</option>
+                                <option value="beef">Beef</option>
+                                <option value="desserts">dessert</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <div class="header-actions">
+                        <button id="cartToggle" class="btn cart-btn"> Cart (<span id="cartCount">0</span>)</button>
+                    </div>
+                </div>
+            </div>
+            <div class="myProductText">
+                <h1>ADD YOUR <span>CRAVINGS HERE!</span></h1>
+                <p>We are happy to serve you.✨</p>
+            </div>
+            <div class="searchDiv">
+                <input type="search" id="searchBar" placeholder="Search food...">
+                <button type="submit" id="search">Search</button>
+            </div>
+
+            
+            <section class="products-grid" id="chicken" aria-label="Chicken products">
+                <h2 class="section-title">Chicken</h2>
+            </section>
+            
+            <section class="products-grid" id="pork" aria-label="Pork products">
+                <h2 class="section-title">Pork</h2>
+            </section>
+            
+            <section class="products-grid" id="seafood" aria-label="seafood products">
+                <h2 class="section-title">seafood</h2>
+            </section>
+            
+            <section class="products-grid" id="beef" aria-label="Beef products">
+                <h2 class="section-title">Beef</h2>
+            </section>
+            
+            <section class="products-grid" id="desserts" aria-label="desserts products">
+                <h2 class="section-title">Dessert</h2>
+            </section>
+            
+            <section class="products-grid" id="drinks" aria-label="Drink products">
+                <h2 class="section-title">Drinks</h2>
+            </section>
+        </div>
+
+        <aside id="cartSidebar" class="cart-sidebar" aria-hidden="true">
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <button id="closeCart" class="btn small">✕</button>
+            </div>
+
+            <div id="cartItems" class="cart-items">
+            </div>
+
+            <div class="cart-summary">
+                <div class="summary-row">
+                <span>Items</span><span id="itemsCount">0</span>
+                </div>
+
+                <div class="summary-row">
+                <strong>Total</strong><strong id="cartTotal">₱0</strong>
+                </div>
+
+
+                <div class="checkout-controls">
+                <button id="checkoutBtn" class="btn wide primary" >Checkout</button>
+                </div>
+                <p class="note">Click checkout to view your receipt.</p>
+            </div>
+        </aside>
+        
+        <div id="receiptModal" class="receipt-modal">
+            <div class="receipt-box">
+                <button class="close-btn" onclick="closeReceipt()">✕</button>
+                <h2>Order Receipt</h2>
+                <div id="receiptItems"></div>
+
+                <div class="receipt-total">
+                    <strong>Total: ₱<span id="receiptTotal">0</span></strong>
+                </div>
+
+                <button onclick="printReceipt()" class="print-btn">Print</button>
+            </div>
+        </div>
+
+        <div class="aboutContainer hidden" id="aboutContainer">
+            <img src="webFile/back.png" alt="arrow" id="arrow">
+            <div class="aboutUsLogo">
+                <h1>QuickBite <span>Foodhub</span></h1>
+                <div class="aboutLoc">
+                    <p>Cagayan de Oro City | Philippines</p>
+                    <p id="aboutRating">⭐⭐⭐⭐⭐</p>
+                </div>
+            </div>
+            <div class="aboutUs">
+                <div class="aboutUsFirst">
+                    <div class="aboutUsFirstText">
+                        <h4>Welcome to QuickBite FoodHub, where delicious food meets fast and friendly service. We are passionate about bringing people together through flavorful meals, refreshing drinks, and unforgettable dining experiences.</h4>
+                    </div>
+                    <div class="aboutUsFirstImg">
+                        <img src="webFile/platebackground.png" alt="plate">
+                    </div>
+                </div>
+                <div class="aboutUsSecond">
+                    <div class="aboutUsSecondP">
+                        <h5>At QuickBite FoodHub, we believe that good food should be accessible, affordable, and satisfying. Our menu is carefully crafted to offer a variety of mouthwatering dishes — from crispy fried favorites and juicy burgers to savory rice meals, snacks, and refreshing beverages. Whether you’re craving a quick snack, a family meal, or comfort food after a long day, we've got something perfect for you.</h5>
+                        <div class="aboutDiv">
+                            <ul>
+                                <li>Freshly prepared meals</li>
+                                <li>Fast and reliable service</li>
+                                <li>Affordable prices for everyone</li>
+                                <li>A clean and welcoming environment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="aboutUsThird">
+                    <div class="aboutUsThirdImg">
+                        <img src="webFile/plate_design.png" alt="">
+                    </div>
+                    <div class="aboutUsThirdP">
+                        <h5>QuickBite FoodHub is more than just a food business — it is a place where friends gather, families bond, and food lovers enjoy every bite. We continuously improve our menu and services to make every customer experience enjoyable and memorable.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+</body>
+<script src="quickbite.js"></script>
+</html>
