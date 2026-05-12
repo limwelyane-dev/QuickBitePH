@@ -16,7 +16,7 @@ body{
     background-color: #1c1c1ce1;
 }
 .firstPage{
-    background-image: url(webFile/bckground.png);
+    background-image: url(bckground.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
