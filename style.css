@@ -868,30 +868,21 @@ body.modal-open > *:not(#login) {
         transform: translateX(0);
     }
 }
-
-/* =========================
-   MOBILE RESPONSIVE DESIGN
-========================= */
 @media (max-width: 768px){
 
     body{
         overflow-x: hidden;
     }
-
-    /* FIRST PAGE */
     .content{
         padding: 20px;
         text-align: center;
     }
-
     .content h1{
         font-size: 2.3rem;
     }
-
     .content h1 span{
         font-size: 2.8rem;
     }
-
     .content h2{
         font-size: 1rem;
     }
@@ -900,66 +891,55 @@ body.modal-open > *:not(#login) {
         width: 95%;
         padding: 15px;
     }
-
     .fText p{
         font-size: 1rem;
     }
-
     .icons{
         flex-direction: row;
         gap: 5px;
     }
-
     .register{
         margin-left: 0;
         flex-wrap: wrap;
         justify-content: center;
     }
-
-    /* LOGIN FORM */
+    
     .formLogin{
         width: 95%;
         padding: 20px;
     }
-
     .close-modal{
         margin-right: -360px;
         margin-bottom: -50px;
     }
-
-    /* NAVIGATION */
+    
     .links{
         width: 90%;
         gap: 12px;
         padding: 5px 10px;
         border-radius: 15px;
     }
-
     .links ul{
         gap: 15px;
         flex-wrap: wrap;
         justify-content: center;
         padding: 0;
     }
-
     .links ul a,
     .selectcategory{
         font-size: 14px;
     }
-
-    /* SECOND PAGE */
+    
     .secondPage{
         flex-direction: column;
         height: auto;
     }
-
     .left,
     .rigth{
         width: 100%;
         max-width: 100%;
         height: auto;
     }
-
     .qlogo{
         margin-left: 0;
         text-align: center;
@@ -1099,11 +1079,100 @@ body.modal-open > *:not(#login) {
 
     /* RECEIPT */
     .receipt-box{
-        width: 60%;
+        width: 70%;
     }
 
     .close-btn{
         margin-right: -220px;
         margin-top: -50px;
+    }
+}
+@media (max-width: 450px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    /* FIRST PAGE */
+    .content{
+        padding: 8px;
+        text-align: center;
+    }
+
+    .content h1{
+        font-size: 2.1rem;
+    }
+
+    .content h1 span{
+        font-size: 2.5rem;
+    }
+
+    .content h2{
+        font-size: 0.8rem;
+    }
+
+    .fText{
+        width: 95%;
+        padding: 12px;
+    }
+
+    .fText p{
+        font-size: 1rem;
+    }
+
+    .icons{
+        flex-direction: row;
+    }
+    .logInBtn{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .register{
+        margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* LOGIN FORM */
+    .loginForm{
+        width: 60%;
+    }
+
+    .close-modal{
+        margin-right: -250px;
+        margin-bottom: -50px;
+    }
+
+    /* NAVIGATION */
+    .links{
+        width: 95%;
+        gap: 8px;
+        padding: 5px 5px;
+        border-radius: 15px;
+    }
+
+    .links ul{
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .links ul a,
+    .selectcategory{
+        font-size: 12px;
+    }
+
+    .orderbtn button,
+    #seemore{
+        width: 130px;
+        margin-bottom: 10px;
+    }
+
+    #arrow{
+        margin-left: 12px;
+        font-size: 12;
     }
 }
