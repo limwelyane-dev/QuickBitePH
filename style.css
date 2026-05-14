@@ -1081,7 +1081,7 @@ body.modal-open > *:not(#login) {
 
     /* RECEIPT */
     .receipt-box{
-        width: 80%;
+        width: 70%;
     }
 
     .close-btn{
@@ -1176,5 +1176,8 @@ body.modal-open > *:not(#login) {
     #arrow{
         margin-left: 12px;
         font-size: 12;
+    }
+    .receipt-box{
+        width: 80%;
     }
 }
