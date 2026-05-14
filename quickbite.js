@@ -273,7 +273,7 @@ let cart = [];
         cartItemsEl.innerHTML = "";
 
         if (!details.length) {
-          cartItemsEl.innerHTML = `<p>Your cart is empty</p>`;
+          cartItemsEl.innerHTML = `<p>Your cart is empty, please add some food uglyman</p>`;
         } else {
           details.forEach(d => {
             const row = document.createElement("div");
