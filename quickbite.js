@@ -273,7 +273,7 @@ let cart = [];
         cartItemsEl.innerHTML = "";
 
         if (!details.length) {
-          cartItemsEl.innerHTML = `<p>Your cart is empty, please add some food uglyman</p>`;
+          cartItemsEl.innerHTML = `<p>Your cart is empty!</p>`;
         } else {
           details.forEach(d => {
             const row = document.createElement("div");
@@ -347,10 +347,6 @@ let cart = [];
         receiptModal.style.display = "none";
       }
 
-      function printReceipt() {
-        window.print();
-      }
-
       function formatNumber(n) {
         return Number(n).toLocaleString("en-PH");
       }
@@ -367,7 +363,6 @@ let cart = [];
       window.changeQty = changeQty;
       window.removeFromCart = removeFromCart;
       window.closeReceipt = closeReceipt;
-      window.printReceipt = printReceipt;
 
       const categorySelect = document.querySelector(".selectcategory");
 
@@ -381,3 +376,18 @@ let cart = [];
         });
     }
 });
+const feedbackContainer = document.getElementById("feedbackContainer");
+const printBtn = document.getElementById("printBtn");
+
+printBtn.addEventListener("click", () => {
+    receiptModal.style.display = "none";
+    feedbackContainer.style.display = "flex";
+
+    cart = [];
+    updateCartUI();
+
+});
+function closefeedback(){
+  feedbackContainer.style.display = "none";
+  cartSidebar.classList.remove("open");
+}
