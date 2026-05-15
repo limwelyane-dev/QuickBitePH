@@ -255,7 +255,7 @@
                     <ul>
                         <li><a href="#" id="home">Home</a></li>
                         <li><a href="#" id="about">About us</a></li>
-                        <li><a href="#">Favourates</a></li>
+                        <li><a href="#">My Order</a></li>
                         <li>
                             <select class="selectcategory">
                                 <option value="category">Category</option>
@@ -344,7 +344,7 @@
                     <strong>Total: ₱<span id="receiptTotal">0</span></strong>
                 </div>
 
-                <button onclick="printReceipt()" class="print-btn">Order Now</button>
+                <button class="print-btn">Order Now</button>
             </div>
         </div>
 
@@ -386,6 +386,19 @@
                     <div class="aboutUsThirdP">
                         <h5>QuickBite FoodHub is more than just a food business — it is a place where friends gather, families bond, and food lovers enjoy every bite. We continuously improve our menu and services to make every customer experience enjoyable and memorable.</h5>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="feedbackContainer" id="feedbackContainer" style="display: none;">
+            <div class="adminFeedback">
+                <button class="feedbackCloseBtn" onclick="closefeedback()">✕</button>
+                <div class="adminFeedbackText">
+                    <h3>Thank you for choosing QuickBite!🎉</h3>
+                    <p>Your Order is now on processing.</p>
+                </div>
+                <div class="adminFeedbackbtn">
+                    <button>View Order</button>
                 </div>
             </div>
         </div>
